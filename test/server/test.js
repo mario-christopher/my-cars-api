@@ -6,6 +6,7 @@ const expect = chai.expect;
 
 chai.use(chaiHttp);
 const SERVER = 'http://localhost:3000/';
+//const SERVER = 'https://my-cars-api.herokuapp.com/';
 
 let jwt, refresh_token;
 
