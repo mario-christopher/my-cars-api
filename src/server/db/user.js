@@ -11,7 +11,7 @@ export const addUser = (email, name, password, avatar_url) => {
             user = {
                 email: (email || '').required().emailId(),
                 name: (name || '').required().min(1).max(100),
-                password: hashPwd((password || '').required().password()),
+                password: hashPwd(((password || '').required().password())),
                 avatar_url: avatar_url,
                 created_at: new Date()
             };
